@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Local check only; not part of the README.
+
+     The banners are loaded through <img> on purpose. That is exactly how
+     GitHub renders them, and it is the restrictive case: an SVG referenced as
+     an image runs its own CSS but gets no scripts and no network. If the
+     animation plays here it plays on the profile.
+
+     Note that `prefers-reduced-motion` does NOT work from inside an image-mode
+     SVG -- that is why the still variants are separate files chosen by the
+     README's <picture>, and why nothing here relies on the query. -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>banner preview</title>
+<style>
+  body { margin: 0; font: 13px ui-monospace, Menlo, Consolas, monospace; }
+  section { padding: 28px 40px; }
+  .light { background: #ffffff; color: #57606a; }
+  .dark  { background: #0d1117; color: #8b949e; }
+  h2 { font-size: 11px; font-weight: 400; letter-spacing: 1.5px;
+       text-transform: uppercase; margin: 0 0 14px; }
+  /* 880px is roughly GitHub's README content width. */
+  img { width: 880px; max-width: 100%; display: block; }
+</style>
+</head>
+<body>
+  <section class="light">
+    <h2>light &mdash; animated</h2>
+    <img src="../assets/attention-light.svg" alt="attention arc banner, light" />
+  </section>
+  <section class="light">
+    <h2>light &mdash; reduced motion</h2>
+    <img src="../assets/attention-light-still.svg" alt="attention arc banner, light, still" />
+  </section>
+  <section class="dark">
+    <h2>dark &mdash; animated</h2>
+    <img src="../assets/attention-dark.svg" alt="attention arc banner, dark" />
+  </section>
+  <section class="dark">
+    <h2>dark &mdash; reduced motion</h2>
+    <img src="../assets/attention-dark-still.svg" alt="attention arc banner, dark, still" />
+  </section>
+</body>
+</html>
