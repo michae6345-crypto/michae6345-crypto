@@ -1,24 +1,15 @@
-<!--
-  Kept deliberately short so the contribution graph clears the fold. Adding a
-  section here pushes it below the viewport, which is the thing this layout
-  exists to avoid.
+# Michael Tarekegn
 
-  The banner is generated: edit tools/build_banner.py and re-run
-  `python tools/build_banner.py`, never the SVGs in assets/.
+High school senior at LACES in Los Angeles, graduating June 2027.
 
-  Source order below is load-bearing. <picture> takes the first source whose
-  media matches, so the reduced-motion variants have to come before the plain
-  dark one, and the <img> is the light animated fallback for anything that
-  matches nothing. The motion query has to live out here rather than inside the
-  SVG -- inside an image-mode SVG it does not track the viewer's real setting.
--->
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/attention-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/attention-light-still.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/attention-dark.svg">
-  <img src="assets/attention-light.svg" width="880" alt="michael tarekegn — an attention arc diagram, where dots on a baseline are tokens and arcs above them are attention weights">
-</picture>
+## Projects
 
-hi, i'm michael. i'm a math &amp; ml researcher working on self-attention mechanisms and physics-informed neural networks. based in los angeles.
+- [frostbite](https://github.com/michae6345-crypto/frostbite): RP2040 macropad design with QMK firmware in C, a raw HID protocol, a KiCad PCB and a Python host daemon.
+- [PInnns](https://github.com/michae6345-crypto/PInnns): code for "Optimizer or Precision? Understanding Optimizer-Precision Interactions in PINNs" (first author, NeurIPS 2026 OPT workshop); 40 PyTorch experiments.
+- [black-scholes-calculator](https://github.com/michae6345-crypto/black-scholes-calculator): zero-dependency Python options pricing library with Greeks, a Crank-Nicolson PDE solver and implied volatility; 117 passing tests.
+- [monte](https://github.com/michae6345-crypto/monte): team hackathon project, Best Project in Finance at ACM@USC TrojanHacks. I built the backend (Plaid integration, Monte Carlo engine).
+- [paper-verify](https://github.com/michae6345-crypto/paper-verify): checks whether an ML paper's numbers agree with each other.
 
-[site](https://michae6345-crypto.github.io) · [x](https://x.com/MichaelTar23939) · [mm.tarekegn@gmail.com](mailto:mm.tarekegn@gmail.com)
+## Contact
+
+[michaeltarekegn.com](https://michaeltarekegn.com) · [LinkedIn](https://www.linkedin.com/in/michael-tarekegn-8a4195365/) · [michae6345@gmail.com](mailto:michae6345@gmail.com)
